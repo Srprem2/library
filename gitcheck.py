@@ -1,7 +1,12 @@
 a = input("Enter the change you have made : ")
 print(f'The change i made is given as : {a}')
-def checkEven(n):
-    if n%2 ==0:
-        return True
+
 n = int(input("Enter the number : "))
-print(checkEven(n))
+def fizzbuzz(n):
+    for i in range(1,n+1):
+        if (i % 3 == 0) and (i % 5 == 0):
+            print('Fizzbuzz')
+        else:
+            print(n)
+
+print(fizzbuzz(n))
